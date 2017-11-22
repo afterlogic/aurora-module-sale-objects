@@ -16,14 +16,14 @@ namespace Aurora\Modules\SaleObjects\Classes;
  * @subpackage Classes
  */
 
-class Product extends \Aurora\System\EAV\Entity
+class License extends \Aurora\System\EAV\Entity
 {
 	protected $aStaticMap = array();
 
 	public function toResponseArray()
 	{
 		$aResponse = parent::toResponseArray();
-		$aResponse['ProductId'] = $this->EntityId;
+		$aResponse['LicenseId'] = $this->EntityId;
 		return $aResponse;
 	}
 }
