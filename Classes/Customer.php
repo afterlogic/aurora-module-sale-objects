@@ -18,7 +18,11 @@ namespace Aurora\Modules\SaleObjects\Classes;
 
 class Customer extends \Aurora\System\EAV\Entity
 {
-	protected $aStaticMap = array();
+	protected $aStaticMap = [
+		'Title' => ['string', ''],
+		'Description' => ['string', ''],
+		'Status' => ['int', 0]
+	];
 
 	public function toResponseArray()
 	{

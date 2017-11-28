@@ -18,7 +18,14 @@ namespace Aurora\Modules\SaleObjects\Classes;
 
 class Sale extends \Aurora\System\EAV\Entity
 {
-	protected $aStaticMap = array();
+	public function __construct($sModuleName)
+	{
+		$this->aStaticMap = [
+			'Date' => ['datetime', date('Y-m-d H:i:s', 0)],
+			'Price' => ['int', 0]
+		];
+		parent::__construct($sModuleName);
+	}
 
 	public function toResponseArray()
 	{
