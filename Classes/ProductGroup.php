@@ -23,7 +23,7 @@ class ProductGroup extends \Aurora\System\EAV\Entity
 		$this->aStaticMap = array(
 			'Title'			=> array('string', ''),
 			'Description'	=> array('string', ''),
-			'Homepage'		=> array('string', ''),
+			'Homepage'		=> array('string', '')
 		);
 		parent::__construct($sModule);
 	}
