@@ -19,7 +19,7 @@ namespace Aurora\Modules\SaleObjects\Classes;
 class Product extends \Aurora\System\EAV\Entity
 {
 	protected $aStaticMap = [
-		'ProductGroupUUID' => array('string', ''),
+		'ProductGroupUUID' => ['string', ''],
 		'Title' => ['string', ''],
 		'Description' => ['string', ''],
 		'Homepage' => ['string', ''],
