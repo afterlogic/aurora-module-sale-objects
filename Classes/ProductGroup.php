@@ -21,7 +21,7 @@ class ProductGroup extends \Aurora\System\EAV\Entity
 	public function __construct($sModule)
 	{
 		$this->aStaticMap = array(
-			'Title'			=> array('string', '', true),
+			'Title'			=> array('string', ''),
 			'Description'	=> array('string', ''),
 			'Homepage'		=> array('string', '')
 		);
