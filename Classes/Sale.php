@@ -23,7 +23,7 @@ class Sale extends \Aurora\System\EAV\Entity
 		$this->aStaticMap = [
 			'ProductUUID'	=> ['string', ''],
 			'CustomerUUID'	=> ['string', ''],
-			'Date'			=> ['datetime', date('Y-m-d H:i:s', 0)],
+			'Date'			=> ['datetime', date('Y-m-d H:i:s', 0), true],
 			'Price'			=> ['int', 0]
 		];
 		parent::__construct($sModuleName);

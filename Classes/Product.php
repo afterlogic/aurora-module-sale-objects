@@ -20,7 +20,7 @@ class Product extends \Aurora\System\EAV\Entity
 {
 	protected $aStaticMap = [
 		'ProductGroupUUID'	=>['string', ''],
-		'Title'				=> ['string', ''],
+		'Title'				=> ['string', '', true],
 		'Description'		=> ['string', ''],
 		'Homepage'			=> ['string', ''],
 		'Price'				=> ['int', 0],
