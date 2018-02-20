@@ -24,7 +24,7 @@ class Sale extends \Aurora\System\EAV\Entity
 			'ProductUUID'	=> ['string', ''],
 			'CustomerUUID'	=> ['string', ''],
 			'Date'			=> ['datetime', date('Y-m-d H:i:s', 0), true],
-			'Price'			=> ['int', 0]
+			'Price'			=> ['double', 0]
 		];
 		parent::__construct($sModuleName);
 	}

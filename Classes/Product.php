@@ -23,7 +23,7 @@ class Product extends \Aurora\System\EAV\Entity
 		'Title'				=> ['string', '', true],
 		'Description'		=> ['string', ''],
 		'Homepage'			=> ['string', ''],
-		'Price'				=> ['int', 0],
+		'Price'				=> ['double', 0],
 		'Status'			=> ['int', 0]
 	];
 
