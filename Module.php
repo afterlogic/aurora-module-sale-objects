@@ -16,4 +16,5 @@ namespace Aurora\Modules\SaleObjects;
  */
 class Module extends \Aurora\System\Module\AbstractModule
 {
+    public function init() {}
 }
